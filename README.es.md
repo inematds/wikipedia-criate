@@ -86,7 +86,6 @@ No hay programa que instalar. Es un kit de textos y una guía en HTML estático.
 
 **Pruebas de la guía**
 - Los 3 idiomas responden (`/guia/`, `/guia/en/`, `/guia/es/`), el selector de idioma navega, sin desplazamiento horizontal en 360 px.
-- `python3 ~/projetos/wifi/scripts/pronto-para-revisar.py ~/projetos/wikipedia-criate` (verificación interna INEMA: enlaces, idiomas, placeholders).
 
 ## Cuidados (qué no hacer)
 

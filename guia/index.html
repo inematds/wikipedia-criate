@@ -42,7 +42,7 @@
   nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
-  nav .links{margin-left:auto;display:flex;align-items:center;gap:18px;font-size:.9rem}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:14px;font-size:.88rem;white-space:nowrap}
   nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
   .lang{display:inline-flex;gap:2px;font-family:Sora;font-size:.78rem}
   .lang a{color:var(--mut);padding:.2em .45em;border-radius:6px} .lang a.on{color:var(--amb);background:rgba(226,162,59,.12)}
@@ -121,12 +121,12 @@
     <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
-    <a class="sec" href="#explicado">O ganho</a>
+    <a class="sec" href="#explicado">Ganho</a>
     <a class="sec" href="#quem">Para quem</a>
-    <a class="sec" href="#como">Como funciona</a>
-    <a class="sec" href="#comecar">Como começar</a>
-    <a class="sec" href="#base">Base</a>
-    <a class="sec" href="#prova">A prova</a>
+    <a class="sec" href="#como">Passos</a>
+    <a class="sec" href="#comecar">Começar</a>
+    <a class="sec" href="#base">Regras</a>
+    <a class="sec" href="#prova">Prova</a>
     <span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
     <a class="btn" href="https://github.com/inematds/wikipedia-criate" target="_blank" rel="noopener">GitHub</a>
@@ -138,11 +138,11 @@
   <div class="wrap">
     <div class="top">
       <span class="chip">Wikidata · Wikipédia · Google · IAs</span>
-      <h1>Quando perguntarem às IAs quem é você, a resposta precisa ter fonte. <span class="amb">Wikipédia do jeito certo</span> coloca você lá.</h1>
+      <h1>Quando perguntarem às IAs quem é você, a resposta precisa ter fonte. <span class="amb">Wikipédia do jeito certo</span> põe a sua história numa ficha com fonte.</h1>
     </div>
     <figure class="f1"><img src="assets/hero.jpg" alt="Lupa sobre uma enciclopédia antiga aberta, numa biblioteca"></figure>
     <div class="bot">
-      <p class="lead">Você trabalhou anos, saiu no jornal, fundou uma empresa. Mas, se o Google e o ChatGPT não acham uma fonte confiável sobre você, eles respondem com pouco, com erro ou com o nome de outra pessoa.</p>
+      <p class="lead">Você trabalhou anos, saiu no jornal, fundou uma empresa. Mas, se o Google e o ChatGPT não acham uma fonte confiável sobre você, eles respondem com pouco, com erro ou com o nome de outra pessoa. Primeiro a ficha no Wikidata; o artigo na Wikipédia vem quando as fontes bastam e os editores aprovam.</p>
       <div class="cta">
         <a class="btn" href="#explicado">O que você ganha</a>
         <a class="btn ghost" href="#comecar">Como começar</a>
@@ -154,7 +154,7 @@
 
 <section id="resumo" class="resumo"><div class="wrap">
   <span class="chip">Em uma frase</span>
-  <p>Este é um guia, com modelos prontos, para colocar você ou a sua empresa no <b>Wikidata</b> (a base de dados aberta da Wikipédia, que buscadores e IAs leem) e, quando houver fontes suficientes, na <b>Wikipédia</b>. Serve para empresário, profissional liberal, criador de conteúdo e quem cuida da imagem de alguém. Ensina o caminho que a própria Wikipédia aceita: juntar matérias publicadas por terceiros, declarar que o assunto é você e pedir que um editor independente revise. Você só precisa das suas matérias antigas e de um assistente de IA, como o Claude Code ou o Codex, para fazer a parte trabalhosa.</p>
+  <p>Este é um guia, com modelos prontos, para colocar você ou a sua empresa no <b>Wikidata</b> (a base de dados aberta da Wikipédia, que buscadores e IAs leem) e, quando houver fontes suficientes, na <b>Wikipédia</b>. Serve para empresário, profissional liberal, criador de conteúdo e quem cuida da imagem de alguém. Ensina o caminho que a própria Wikipédia aceita: juntar matérias publicadas por terceiros, declarar que o assunto é você e pedir que um editor independente revise. Você só precisa das suas matérias antigas e de um assistente de IA, como o Claude Code ou o Codex (programas que pesquisam na internet e escrevem os textos por você), para fazer a parte trabalhosa.</p>
 </div></section>
 
 <section id="explicado"><div class="wrap">
@@ -163,12 +163,12 @@
   <p class="sub">A Wikipédia não é rede social nem propaganda. É por isso que ela pesa tanto: o que está lá passou por gente de fora.</p>
   <div class="grid g2">
     <div class="card antes"><span class="tag">Antes</span><h3>A IA adivinha</h3><ul><li>Perguntam ao ChatGPT sobre você e ele mistura você com um homônimo.</li><li>O Google mostra só o seu Instagram, sem contexto.</li><li>Trinta anos de história ficam espalhados em matérias que ninguém acha.</li></ul></div>
-    <div class="card depois"><span class="tag">Depois</span><h3>A IA lê uma ficha</h3><ul><li>Existe um item no Wikidata com seu nome, sua empresa e o link das matérias.</li><li>O seu site aponta para essa ficha, e a ficha aponta para o seu site.</li><li>Com fontes suficientes, um artigo na Wikipédia revisado por editores independentes.</li></ul></div>
+    <div class="card depois"><span class="tag">Depois</span><h3>Existe uma ficha para ler</h3><ul><li>Existe um item no Wikidata com seu nome, sua empresa e o link das matérias.</li><li>O seu site aponta para essa ficha, e a ficha aponta para o seu site (quem cuida do seu site faz isso em minutos).</li><li>Com fontes suficientes e a aprovação dos editores, um artigo na Wikipédia.</li></ul></div>
   </div>
   <div class="grid g3" style="margin-top:16px">
     <div class="card"><div class="big">1</div><h3>🔎 Você fica encontrável</h3><p>Nome, empresa, cidade e redes ligados num único lugar que buscadores e assistentes de IA consultam.</p></div>
     <div class="card"><div class="big">2</div><h3>🧾 Sua história ganha prova</h3><p>Cada informação aponta para uma matéria de jornal. Quem desconfia clica e confere.</p></div>
-    <div class="card"><div class="big">3</div><h3>🤝 Seu negócio ganha confiança</h3><p>Cliente, parceiro e investidor pesquisam antes de fechar. Achar uma ficha neutra e com fonte ajuda mais que qualquer anúncio.</p></div>
+    <div class="card"><div class="big">3</div><h3>🤝 Seu negócio ganha confiança</h3><p>Cliente, parceiro e investidor pesquisam antes de fechar. Achar uma ficha neutra e com fonte passa uma confiança que anúncio não passa.</p></div>
   </div>
 </div></section>
 
@@ -191,7 +191,7 @@
     <div class="card"><img class="quem-img" onerror="this.remove()" src="assets/quem-dono.jpg" alt="Dono de loja no balcão olhando o celular" loading="lazy"><h3>🏪 Dono de empresa</h3><p>A empresa fundada há anos aparece com data, cidade e fundador. O cliente que pesquisa encontra a história, não só o anúncio.</p></div>
     <div class="card"><img class="quem-img" onerror="this.remove()" src="assets/quem-profissional.jpg" alt="Profissional no consultório lendo no notebook" loading="lazy"><h3>⚖️ Profissional liberal</h3><p>Advogado, médico, contador: a IA para de confundir você com um homônimo e cita o que você fez, com fonte.</p></div>
     <div class="card"><img class="quem-img" onerror="this.remove()" src="assets/quem-criador.jpg" alt="Criador de conteúdo no estúdio com uma enciclopédia aberta" loading="lazy"><h3>🎥 Criador de conteúdo</h3><p>Seus perfis ficam ligados entre si e à sua trajetória. Quem chega por um vídeo acha o resto.</p></div>
-    <div class="card"><img class="quem-img" onerror="this.remove()" src="assets/quem-assessor.jpg" alt="Assessora organizando recortes de jornal" loading="lazy"><h3>📰 Quem cuida da imagem</h3><p>Assessor, agência, secretária: um roteiro claro, com modelos, para fazer pelo cliente sem quebrar as regras.</p></div>
+    <div class="card"><img class="quem-img" onerror="this.remove()" src="assets/quem-assessor.jpg" alt="Assessora organizando recortes de jornal" loading="lazy"><h3>📰 Quem cuida da imagem</h3><p>Assessor, agência, secretária: o roteiro e os modelos para preparar tudo (fontes, ficha, rascunho). A conta e as edições são da própria pessoa. Se você editar pelo cliente, use a sua conta e declare que é edição paga.</p></div>
   </div>
 </div></section>
 
@@ -201,7 +201,7 @@
   <p class="sub">Situações comuns, antes e depois.</p>
   <div class="sit">
     <div class="card antes"><span class="tag">Hoje</span><p>Um possível sócio pergunta ao ChatGPT "quem é fulano?" e recebe duas linhas vagas.</p></div>
-    <div class="card depois"><span class="tag">Com a ficha</span><p>A resposta traz a empresa que você fundou, o ano e a cidade, porque isso está numa base aberta e com fonte.</p></div>
+    <div class="card depois"><span class="tag">Com a ficha</span><p>Quem pesquisa, e as IAs que consultam bases abertas, passam a ter onde achar a empresa que você fundou, o ano e a cidade, com fonte. Quando e como cada IA usa isso, ninguém garante.</p></div>
   </div>
   <div class="sit">
     <div class="card antes"><span class="tag">Hoje</span><p>Você guarda recortes de jornal numa gaveta. Ninguém os vê.</p></div>
@@ -209,11 +209,11 @@
   </div>
   <h3 style="margin:28px 0 14px">Um dia de trabalho, contado por horário (caso real)</h3>
   <div class="dia">
-    <div><b>01:00</b>"Quero o INEMA na Wikipédia." Resposta franca: a marca nova ainda não tem fontes; você tem.</div>
+    <div><b>01:00</b>Nei Maldaner pede: "Quero o INEMA na Wikipédia." Resposta franca: a marca nova ainda não tem fontes; você tem.</div>
     <div><b>02:00</b>A IA acha um perfil de 2009, uma entrevista de 2011 e notas de jornal. Abre cada uma e confere.</div>
     <div><b>04:30</b>Conta criada com o nome da pessoa. Primeira edição: declarar o vínculo.</div>
     <div><b>05:30</b>Dois itens no Wikidata, a pessoa e a empresa, com 19 informações e as matérias como fonte.</div>
-    <div><b>06:00</b>Rascunho do artigo publicado e pedido de revisão feito. Agora quem decide é a comunidade.</div>
+    <div><b>06:00</b>Rascunho do artigo publicado e pedido de revisão feito. O Wikidata ficou pronto na hora; o artigo ainda espera os editores e pode não entrar.</div>
   </div>
 </div></section>
 
@@ -230,7 +230,7 @@
   <p class="sub">Pense num processo de cartório: primeiro os documentos, depois a ficha, por fim o pedido para alguém de fora carimbar.</p>
   <figure class="wide"><img src="assets/banner-grade.jpg" alt="Banner com os passos: juntar as fontes, ficha no Wikidata, declarar o vínculo, rascunho, pedido de revisão, ligar ao seu site" loading="lazy"></figure>
   <div class="step"><div class="b">1</div><div><h3>Juntar as provas <span class="quem">IA + você</span></h3><p>Como separar documentos para o cartório: matérias de jornal, entrevistas, prêmios. A IA procura e abre cada página; você lembra onde saiu e manda o que tiver.</p></div></div>
-  <div class="step"><div class="b">2</div><div><h3>Criar a conta com o seu nome <span class="quem">você</span></h3><p>Como assinar um documento: nome de pessoa, não de marca. Senha e CAPTCHA são sempre seus.</p></div></div>
+  <div class="step"><div class="b">2</div><div><h3>Criar a conta com o seu nome <span class="quem">você</span></h3><p>Como assinar um documento: nome de pessoa, não de marca. Senha e CAPTCHA (o teste de "não sou um robô") são sempre seus.</p></div></div>
   <div class="step"><div class="b">3</div><div><h3>Declarar o vínculo <span class="quem">IA escreve, você aprova</span></h3><p>Como avisar "sou parte interessada" antes de falar numa reunião. É a primeira edição da conta.</p></div></div>
   <div class="step"><div class="b">4</div><div><h3>Preencher a ficha no Wikidata <span class="quem">IA</span></h3><p>Como um cadastro em que cada campo leva o comprovante grampeado: "fundou a empresa", com o link da matéria que diz isso.</p></div></div>
   <div class="step"><div class="b">5</div><div><h3>Rascunho e pedido de revisão <span class="quem">IA escreve, você envia</span></h3><p>O artigo fica numa página de rascunho sua. Um editor independente lê, ajusta e decide se vai para o ar.</p></div></div>
@@ -241,7 +241,7 @@
     <div class="card nao"><h3>🚫 Não peça a amigos para criar</h3><p>Várias contas ou amigos sem declarar o vínculo é detectado e pode bloquear todos.</p></div>
     <div class="card nao"><h3>🚫 Não publique direto</h3><p>Com vínculo, o texto vai para rascunho e alguém de fora revisa.</p></div>
     <div class="card nao"><h3>🚫 Não use fonte paga como prova</h3><p>Matéria marcada como "publicitária" só confirma fato simples, como uma data.</p></div>
-    <div class="card nao"><h3>🚫 Não brigue pelo texto depois</h3><p>Depois de publicado, o artigo não é seu. Peça mudanças na página de discussão.</p></div>
+    <div class="card nao"><h3>🚫 Não brigue pelo texto depois</h3><p>Depois de publicado, o artigo não é seu. Peça mudanças na aba "Discussão" do artigo.</p></div>
   </div>
   <div class="card" style="margin-top:16px"><h3>O que este guia não promete</h3><p>Não garante artigo na Wikipédia: quem decide é a comunidade de editores. Garante que você entre pelo caminho certo, com o que tem de melhor, e saiba com franqueza o que ainda falta.</p></div>
 </div></section>
@@ -250,7 +250,7 @@
   <span class="chip">Como começar</span>
   <h2>Você não precisa saber editar a Wikipédia</h2>
   <p class="sub">A IA faz a pesquisa, as fichas e o texto. Você aprova, põe a senha e envia.</p>
-  <div class="step"><div class="b">1</div><div><h3>Abra o Claude Code ou o Codex</h3><p>Num computador, numa pasta qualquer. São assistentes de IA que leem páginas e escrevem arquivos.</p></div></div>
+  <div class="step"><div class="b">1</div><div><h3>Abra um assistente de IA</h3><p>O <a href="https://claude.com/product/claude-code" target="_blank" rel="noopener">Claude Code</a> (da Anthropic) e o <a href="https://openai.com/codex/" target="_blank" rel="noopener">Codex</a> (da OpenAI) são programas de computador que vêm com a assinatura paga do Claude ou do ChatGPT. Eles pesquisam na internet e escrevem os textos. Não tem? O Claude ou o ChatGPT no navegador também fazem a pesquisa e os textos; só não abrem o Wikidata por você, e aí você cola os textos à mão. O Claude Code e o Codex funcionam numa tela de comandos (terminal); se isso assusta, comece pelo navegador.</p></div></div>
   <div class="step"><div class="b">2</div><div><h3>Cole o pedido abaixo, com o seu nome</h3><p>Ele manda a IA ler este kit, procurar suas matérias e dizer com franqueza o que dá para fazer.</p></div></div>
   <div class="step"><div class="b">3</div><div><h3>Diga sim só ao que fizer sentido</h3><p>Nada é publicado e nenhuma conta é criada antes do seu sim.</p></div></div>
   <div class="cola">
@@ -263,16 +263,16 @@ Não crie conta, não publique nada e não digite senha. Mostre tudo antes e esp
     <button class="btn" id="copiar" type="button">Copiar o pedido</button>
   </div>
   <div class="grid g2">
-    <div class="card"><h3>Quer só usar, sem instalar nada?</h3><p>Os modelos são textos simples. Abra a pasta <a href="https://github.com/inematds/wikipedia-criate/tree/main/modelos" target="_blank" rel="noopener">modelos no GitHub</a>, copie e preencha à mão. O Wikidata e a Wikipédia funcionam no navegador, sem programa.</p></div>
-    <div class="card"><h3>Onde baixar?</h3><p>Não há programa para instalar. Baixe o kit inteiro em <a href="https://github.com/inematds/wikipedia-criate/archive/refs/heads/main.zip">ZIP</a> (modelos, caso real e este guia).</p></div>
-    <div class="card"><h3>É técnico?</h3><p>Os detalhes (como a IA conduz o navegador, o que nunca fazer pela API, a lista de propriedades do Wikidata) estão no README.</p><p style="margin-top:.7em"><a class="btn ghost" href="https://github.com/inematds/wikipedia-criate#instalação-técnica" target="_blank" rel="noopener">Ver a parte técnica</a></p></div>
+    <div class="card"><h3>Quer fazer à mão, sem assistente?</h3><p>Os modelos são textos simples: abra a pasta <a href="https://github.com/inematds/wikipedia-criate/tree/main/modelos" target="_blank" rel="noopener">modelos no GitHub</a>, copie e preencha. O roteiro de onde clicar no Wikidata e na Wikipédia, em 10 passos, está no <a href="https://github.com/inematds/wikipedia-criate#o-processo-do-início-ao-fim" target="_blank" rel="noopener">README</a>. Tudo funciona no navegador.</p></div>
+    <div class="card"><h3>Onde baixar?</h3><p>O kit não tem programa próprio (o assistente de IA é à parte, veja o passo 1). Baixe o kit inteiro em <a href="https://github.com/inematds/wikipedia-criate/archive/refs/heads/main.zip">ZIP</a> (modelos, caso real e este guia).</p></div>
+    <div class="card"><h3>É técnico?</h3><p>Os detalhes (como a IA conduz o navegador, o que nunca fazer de forma automática, a lista de campos do Wikidata) estão no manual técnico do kit.</p><p style="margin-top:.7em"><a class="btn ghost" href="https://github.com/inematds/wikipedia-criate#instalação-técnica" target="_blank" rel="noopener">Ver a parte técnica</a></p></div>
     <div class="card"><h3>Quanto custa?</h3><p>Wikidata e Wikipédia são gratuitos. O custo é o do seu assistente de IA (assinatura) e o seu tempo para aprovar. Conferido em 25/11/2026.</p></div>
   </div>
 </div></section>
 
 <section id="prova"><div class="wrap">
   <span class="chip">A prova</span>
-  <h2>Feito numa madrugada, com o criador do INEMA</h2>
+  <h2>Feito numa madrugada, com o criador do INEMA (o artigo ainda espera revisão)</h2>
   <p class="sub">Nei Maldaner fundou a SISNEMA em 1990 e hoje cuida do INEMA. Em 25/11/2026 este processo foi feito do zero, com ele aprovando cada passo. Tudo está no ar para você conferir.</p>
   <div class="grid g4" style="margin-bottom:22px">
     <div class="card"><div class="big">2</div><p>itens no Wikidata: a pessoa e a empresa</p></div>
@@ -294,8 +294,8 @@ Não crie conta, não publique nada e não digite senha. Mostre tudo antes e esp
   <h2>Perguntas comuns</h2>
   <details><summary>Preciso saber programar?</summary><p>Não. A IA faz a pesquisa e escreve. Você lê, aprova, põe a senha e resolve os CAPTCHAs.</p></details>
   <details><summary>Posso colocar minha empresa nova?</summary><p>No Wikidata, talvez, se houver fonte pública. Na Wikipédia, só quando jornais ou revistas independentes já tiverem escrito sobre ela. O guia diz isso com franqueza.</p></details>
-  <details><summary>Quanto tempo leva?</summary><p>Wikidata: algumas horas, se as matérias existem. Artigo na Wikipédia: depende da revisão dos editores, de dias a semanas.</p></details>
-  <details><summary>E se eu já tenho um artigo?</summary><p>Não edite o artigo sobre você. Proponha mudanças na página de discussão dele, com fonte, e declare o vínculo.</p></details>
+  <details><summary>Quanto tempo leva?</summary><p>Wikidata: algumas horas, se as matérias existem. Artigo na Wikipédia: depende da revisão dos editores: de semanas a meses, e pode não ser aprovado.</p></details>
+  <details><summary>E se eu já tenho um artigo?</summary><p>Não edite o artigo sobre você. Proponha mudanças na aba "Discussão" no topo dele, com fonte, e declare o vínculo.</p></details>
   <details><summary>Posso pagar alguém para fazer?</summary><p>Edição paga tem regras próprias na Wikimedia e precisa ser declarada. Fazer você mesmo, com vínculo declarado, é mais simples e transparente.</p></details>
   <details><summary>Isso aparece mesmo no Google e nas IAs?</summary><p>O Wikidata e a Wikipédia são abertos e muito usados por buscadores e por quem treina IAs. Não há garantia de quando nem de como cada serviço vai usar. O ganho certo é ter uma ficha neutra e com fonte, ligada ao seu site.</p></details>
   <p style="margin-top:26px;font-size:1.1rem">E você: <b>se alguém perguntar hoje a uma IA quem você é, o que ela responde?</b> O guia é grátis no <a href="https://inema.club" target="_blank" rel="noopener">inema.club</a>, direto na internet.</p>
@@ -325,7 +325,8 @@ Não crie conta, não publique nada e não digite senha. Mostre tudo antes e esp
     c.addEventListener('click',function(){
       var txt=document.getElementById('pedido').innerText;
       var done=function(){ var o=c.textContent; c.textContent='Copiado ✓'; setTimeout(function(){ c.textContent=o; },1800); };
-      if(navigator.clipboard){ navigator.clipboard.writeText(txt).then(done,function(){}); }
+      var sel=function(){ var r=document.createRange(); r.selectNodeContents(document.getElementById('pedido')); var w=window.getSelection(); w.removeAllRanges(); w.addRange(r); c.textContent='Selecionado: copie com Ctrl+C'; };
+      if(navigator.clipboard){ navigator.clipboard.writeText(txt).then(done,sel); } else { sel(); }
     });
   })();
 </script>

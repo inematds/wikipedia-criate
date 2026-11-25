@@ -86,7 +86,6 @@ There is no program to install. It is a kit of texts and a static HTML guide.
 
 **Guide tests**
 - All 3 languages respond (`/guia/`, `/guia/en/`, `/guia/es/`), the language selector navigates, no horizontal scrolling at 360 px.
-- `python3 ~/projetos/wifi/scripts/pronto-para-revisar.py ~/projetos/wikipedia-criate` (internal INEMA check: links, languages, placeholders).
 
 ## Cautions (what not to do)
 

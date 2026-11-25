@@ -1,0 +1,12 @@
+Onde postar (Wikipédia em português): Ajuda:Tire suas dúvidas → "Adicionar tópico"
+https://pt.wikipedia.org/wiki/Ajuda:Tire_suas_dúvidas
+
+Título do tópico:
+Pedido de revisão de rascunho de biografia (conflito de interesse) — <Seu Nome>
+
+Texto:
+Olá. Sou <Seu Nome> e tenho conflito de interesse declarado na minha página de usuário: o rascunho é sobre mim.
+Preparei um rascunho de biografia em [[Usuário:<Seu Nome>/Rascunho]], com fontes publicadas por terceiros (<veículo 1>, <veículo 2>, <veículo 3>). Item no Wikidata: [[d:Q<número>]].
+Peço que um editor independente avalie se o tema atende aos critérios de notoriedade e, se for o caso, ajuste o texto e o mova para o domínio principal. Não vou editar o artigo diretamente. Obrigado. ~~~~
+
+Depois: a resposta chega no sininho de notificações da conta. Não insista, não crie outra conta, não peça a amigos para "aprovar".

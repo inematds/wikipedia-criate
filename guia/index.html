@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wikipédia do jeito certo — seu nome no Wikidata e na Wikipédia, com fonte</title>
+<meta name="description" content="Quando alguém pergunta ao Google ou a uma IA quem é você, a resposta vem de fontes como o Wikidata e a Wikipédia. Este guia mostra o caminho certo para entrar lá: fontes, vínculo declarado e revisão da comunidade, com um caso real.">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/wikipedia-criate/guia/">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/wikipedia-criate/guia/en/">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/wikipedia-criate/guia/es/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#E2A23B; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    --ok:#4ade80; --no:#f87171;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#b9791d; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    --ok:#15803d; --no:#b91c1c;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  body.light nav{background:rgba(246,247,249,.85)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb);white-space:nowrap}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:18px;font-size:.9rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .lang{display:inline-flex;gap:2px;font-family:Sora;font-size:.78rem}
+  .lang a{color:var(--mut);padding:.2em .45em;border-radius:6px} .lang a.on{color:var(--amb);background:rgba(226,162,59,.12)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora;border:none;cursor:pointer;font-size:.95rem}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:900px){nav .links a.sec{display:none}}
+  @media(max-width:520px){nav .wrap{gap:8px;padding:8px 14px;height:auto;flex-wrap:wrap} nav .links{gap:8px;margin-left:0;width:100%;justify-content:space-between} nav .btn{padding:.45em .7em;font-size:.82rem} .tgl{width:34px;height:34px}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(226,162,59,.22),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;grid-template-areas:"top f1" "bot f2";gap:26px 40px;align-items:center;padding:64px 22px}
+  .hero .top{grid-area:top} .hero .bot{grid-area:bot} .hero .f1{grid-area:f1} .hero .f2{grid-area:f2}
+  .hero h1{font-size:clamp(2rem,4.4vw,3.2rem);font-weight:800;letter-spacing:-.025em;margin-top:.35em}
+  .hero p.lead{font-size:1.14rem;color:var(--mut);margin:0 0 1.4em;max-width:40ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;height:auto;display:block}
+  @media(max-width:820px){.hero .wrap{grid-template-columns:1fr;grid-template-areas:"top" "f1" "bot" "f2";padding:44px 22px}}
+  .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
+  .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:64ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:860px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0}
+  .card h3{font-size:1.05rem;margin-bottom:.45em}
+  .card p{color:var(--mut);font-size:.93rem;margin:0}
+  .card ul{color:var(--mut);font-size:.92rem;margin:.4em 0 0;padding-left:1.1em}
+  .card li{margin:.25em 0}
+  .antes{border-left:4px solid var(--no)} .depois{border-left:4px solid var(--ok)}
+  .tag{display:inline-block;font-family:Sora;font-weight:800;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.5em}
+  .antes .tag{color:var(--no)} .depois .tag{color:var(--ok)}
+  .big{font-family:Sora;font-weight:800;font-size:2.1rem;color:var(--amb);line-height:1;margin-bottom:.25em}
+  .quem-img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:12px;margin-bottom:12px;display:block;background:var(--bg2)}
+  .sit{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+  @media(max-width:640px){.sit{grid-template-columns:1fr}}
+  .sit .card b{font-family:Sora}
+  .dia{border-left:2px solid var(--line);margin-left:8px;padding-left:22px}
+  .dia div{position:relative;margin-bottom:16px}
+  .dia div::before{content:"";position:absolute;left:-29px;top:.45em;width:12px;height:12px;border-radius:50%;background:var(--amb)}
+  .dia b{font-family:Sora;color:var(--amb);margin-right:8px}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;margin-bottom:24px}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 0}
+  .step .quem{display:inline-block;font-size:.78rem;font-family:Sora;font-weight:600;color:var(--amb);background:rgba(226,162,59,.12);border-radius:999px;padding:.15em .7em;margin-left:6px;vertical-align:middle}
+  .cola{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:18px 18px 14px;margin:18px 0}
+  .cola p.txt{white-space:pre-wrap;font-size:.93rem;margin:0 0 12px;color:var(--txt)}
+  .nao{border-left:4px solid var(--no)}
+  .vid{aspect-ratio:16/9;border:1px dashed var(--line);border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--mut);text-align:center;padding:20px}
+  .linha{display:grid;grid-template-columns:120px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+  .linha:last-child{border:none}
+  .linha b{font-family:Sora;color:var(--amb)}
+  @media(max-width:520px){.linha{grid-template-columns:1fr;gap:2px}}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+  summary{cursor:pointer;font-family:Sora;font-weight:600}
+  details p{color:var(--mut);margin:.6em 0 0}
+  figure.wide{margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  figure.wide img{width:100%;display:block}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:4px}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top"><span class="emoji">📚</span> Wikipédia do jeito certo</a>
+  <span class="sep">|</span>
+  <span class="clubpro">
+    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <span class="sep">-</span>
+    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+  </span>
+  <div class="links">
+    <a class="sec" href="#explicado">O ganho</a>
+    <a class="sec" href="#quem">Para quem</a>
+    <a class="sec" href="#como">Como funciona</a>
+    <a class="sec" href="#comecar">Como começar</a>
+    <a class="sec" href="#base">Base</a>
+    <a class="sec" href="#prova">A prova</a>
+    <span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span>
+    <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
+    <a class="btn" href="https://github.com/inematds/wikipedia-criate" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div class="top">
+      <span class="chip">Wikidata · Wikipédia · Google · IAs</span>
+      <h1>Quando perguntarem às IAs quem é você, a resposta precisa ter fonte. <span class="amb">Wikipédia do jeito certo</span> coloca você lá.</h1>
+    </div>
+    <figure class="f1"><img src="assets/hero.jpg" alt="Lupa sobre uma enciclopédia antiga aberta, numa biblioteca"></figure>
+    <div class="bot">
+      <p class="lead">Você trabalhou anos, saiu no jornal, fundou uma empresa. Mas, se o Google e o ChatGPT não acham uma fonte confiável sobre você, eles respondem com pouco, com erro ou com o nome de outra pessoa.</p>
+      <div class="cta">
+        <a class="btn" href="#explicado">O que você ganha</a>
+        <a class="btn ghost" href="#comecar">Como começar</a>
+      </div>
+    </div>
+    <figure class="f2"><img src="assets/banner.jpg" alt="Banner: Wikipédia do jeito certo — seu nome no Wikidata e na Wikipédia, com fonte"></figure>
+  </div>
+</header>
+
+<section id="resumo" class="resumo"><div class="wrap">
+  <span class="chip">Em uma frase</span>
+  <p>Este é um guia, com modelos prontos, para colocar você ou a sua empresa no <b>Wikidata</b> (a base de dados aberta da Wikipédia, que buscadores e IAs leem) e, quando houver fontes suficientes, na <b>Wikipédia</b>. Serve para empresário, profissional liberal, criador de conteúdo e quem cuida da imagem de alguém. Ensina o caminho que a própria Wikipédia aceita: juntar matérias publicadas por terceiros, declarar que o assunto é você e pedir que um editor independente revise. Você só precisa das suas matérias antigas e de um assistente de IA, como o Claude Code ou o Codex, para fazer a parte trabalhosa.</p>
+</div></section>
+
+<section id="explicado"><div class="wrap">
+  <span class="chip">O ganho</span>
+  <h2>De "quem é essa pessoa?" para uma ficha com fonte</h2>
+  <p class="sub">A Wikipédia não é rede social nem propaganda. É por isso que ela pesa tanto: o que está lá passou por gente de fora.</p>
+  <div class="grid g2">
+    <div class="card antes"><span class="tag">Antes</span><h3>A IA adivinha</h3><ul><li>Perguntam ao ChatGPT sobre você e ele mistura você com um homônimo.</li><li>O Google mostra só o seu Instagram, sem contexto.</li><li>Trinta anos de história ficam espalhados em matérias que ninguém acha.</li></ul></div>
+    <div class="card depois"><span class="tag">Depois</span><h3>A IA lê uma ficha</h3><ul><li>Existe um item no Wikidata com seu nome, sua empresa e o link das matérias.</li><li>O seu site aponta para essa ficha, e a ficha aponta para o seu site.</li><li>Com fontes suficientes, um artigo na Wikipédia revisado por editores independentes.</li></ul></div>
+  </div>
+  <div class="grid g3" style="margin-top:16px">
+    <div class="card"><div class="big">1</div><h3>🔎 Você fica encontrável</h3><p>Nome, empresa, cidade e redes ligados num único lugar que buscadores e assistentes de IA consultam.</p></div>
+    <div class="card"><div class="big">2</div><h3>🧾 Sua história ganha prova</h3><p>Cada informação aponta para uma matéria de jornal. Quem desconfia clica e confere.</p></div>
+    <div class="card"><div class="big">3</div><h3>🤝 Seu negócio ganha confiança</h3><p>Cliente, parceiro e investidor pesquisam antes de fechar. Achar uma ficha neutra e com fonte ajuda mais que qualquer anúncio.</p></div>
+  </div>
+</div></section>
+
+<section id="base"><div class="wrap">
+  <span class="chip">De onde vem</span>
+  <h2>As regras não são nossas: são da Wikipédia</h2>
+  <p class="sub">O guia só organiza o que as páginas oficiais da Wikimedia já dizem. Leia na fonte.</p>
+  <div class="grid g3">
+    <div class="card"><h3>📏 Notoriedade</h3><p>Para ter artigo, é preciso cobertura significativa em fontes confiáveis e independentes. Site próprio não conta.</p><p style="margin-top:.6em"><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:Crit%C3%A9rios_de_notoriedade" target="_blank" rel="noopener">Critérios de notoriedade →</a></p></div>
+    <div class="card"><h3>⚖️ Conflito de interesse</h3><p>Escrever sobre si mesmo é "fortemente desencorajado". Quem faz deve declarar o vínculo e propor o texto para outros revisarem.</p><p style="margin-top:.6em"><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:Conflito_de_interesses" target="_blank" rel="noopener">Conflito de interesse →</a></p></div>
+    <div class="card"><h3>🗃️ Wikidata</h3><p>Base de dados livre e aberta, que pessoas e máquinas leem e editam. Os dados são de domínio público (CC0), por isso outros serviços podem usá-los.</p><p style="margin-top:.6em"><a href="https://www.wikidata.org/wiki/Wikidata:Introduction" target="_blank" rel="noopener">O que é o Wikidata →</a></p></div>
+  </div>
+</div></section>
+
+<section id="quem"><div class="wrap">
+  <span class="chip">Para quem</span>
+  <h2>O que cada um ganha</h2>
+  <p class="sub">Serve para quem já tem história publicada por outras pessoas. Se ainda não tem, o guia mostra o que falta.</p>
+  <div class="grid g4">
+    <div class="card"><img class="quem-img" onerror="this.remove()" src="assets/quem-dono.jpg" alt="Dono de loja no balcão olhando o celular" loading="lazy"><h3>🏪 Dono de empresa</h3><p>A empresa fundada há anos aparece com data, cidade e fundador. O cliente que pesquisa encontra a história, não só o anúncio.</p></div>
+    <div class="card"><img class="quem-img" onerror="this.remove()" src="assets/quem-profissional.jpg" alt="Profissional no consultório lendo no notebook" loading="lazy"><h3>⚖️ Profissional liberal</h3><p>Advogado, médico, contador: a IA para de confundir você com um homônimo e cita o que você fez, com fonte.</p></div>
+    <div class="card"><img class="quem-img" onerror="this.remove()" src="assets/quem-criador.jpg" alt="Criador de conteúdo no estúdio com uma enciclopédia aberta" loading="lazy"><h3>🎥 Criador de conteúdo</h3><p>Seus perfis ficam ligados entre si e à sua trajetória. Quem chega por um vídeo acha o resto.</p></div>
+    <div class="card"><img class="quem-img" onerror="this.remove()" src="assets/quem-assessor.jpg" alt="Assessora organizando recortes de jornal" loading="lazy"><h3>📰 Quem cuida da imagem</h3><p>Assessor, agência, secretária: um roteiro claro, com modelos, para fazer pelo cliente sem quebrar as regras.</p></div>
+  </div>
+</div></section>
+
+<section id="dia"><div class="wrap">
+  <span class="chip">No seu dia</span>
+  <h2>Como isso muda o seu dia</h2>
+  <p class="sub">Situações comuns, antes e depois.</p>
+  <div class="sit">
+    <div class="card antes"><span class="tag">Hoje</span><p>Um possível sócio pergunta ao ChatGPT "quem é fulano?" e recebe duas linhas vagas.</p></div>
+    <div class="card depois"><span class="tag">Com a ficha</span><p>A resposta traz a empresa que você fundou, o ano e a cidade, porque isso está numa base aberta e com fonte.</p></div>
+  </div>
+  <div class="sit">
+    <div class="card antes"><span class="tag">Hoje</span><p>Você guarda recortes de jornal numa gaveta. Ninguém os vê.</p></div>
+    <div class="card depois"><span class="tag">Com o dossiê</span><p>Cada matéria vira um link conferido, que sustenta a ficha e, depois, o artigo.</p></div>
+  </div>
+  <h3 style="margin:28px 0 14px">Um dia de trabalho, contado por horário (caso real)</h3>
+  <div class="dia">
+    <div><b>01:00</b>"Quero o INEMA na Wikipédia." Resposta franca: a marca nova ainda não tem fontes; você tem.</div>
+    <div><b>02:00</b>A IA acha um perfil de 2009, uma entrevista de 2011 e notas de jornal. Abre cada uma e confere.</div>
+    <div><b>04:30</b>Conta criada com o nome da pessoa. Primeira edição: declarar o vínculo.</div>
+    <div><b>05:30</b>Dois itens no Wikidata, a pessoa e a empresa, com 19 informações e as matérias como fonte.</div>
+    <div><b>06:00</b>Rascunho do artigo publicado e pedido de revisão feito. Agora quem decide é a comunidade.</div>
+  </div>
+</div></section>
+
+<section id="video"><div class="wrap">
+  <span class="chip">Vídeo</span>
+  <h2>Entenda em poucos minutos</h2>
+  <!-- VIDEO: entra o explicavideo do projeto quando publicado -->
+  <div class="vid">🎬 O vídeo explicativo entra aqui assim que for publicado.</div>
+</div></section>
+
+<section id="como"><div class="wrap">
+  <span class="chip">Como funciona, sem jargão</span>
+  <h2>Cinco passos, na ordem que a Wikipédia aceita</h2>
+  <p class="sub">Pense num processo de cartório: primeiro os documentos, depois a ficha, por fim o pedido para alguém de fora carimbar.</p>
+  <figure class="wide"><img src="assets/banner-grade.jpg" alt="Banner com os passos: juntar as fontes, ficha no Wikidata, declarar o vínculo, rascunho, pedido de revisão, ligar ao seu site" loading="lazy"></figure>
+  <div class="step"><div class="b">1</div><div><h3>Juntar as provas <span class="quem">IA + você</span></h3><p>Como separar documentos para o cartório: matérias de jornal, entrevistas, prêmios. A IA procura e abre cada página; você lembra onde saiu e manda o que tiver.</p></div></div>
+  <div class="step"><div class="b">2</div><div><h3>Criar a conta com o seu nome <span class="quem">você</span></h3><p>Como assinar um documento: nome de pessoa, não de marca. Senha e CAPTCHA são sempre seus.</p></div></div>
+  <div class="step"><div class="b">3</div><div><h3>Declarar o vínculo <span class="quem">IA escreve, você aprova</span></h3><p>Como avisar "sou parte interessada" antes de falar numa reunião. É a primeira edição da conta.</p></div></div>
+  <div class="step"><div class="b">4</div><div><h3>Preencher a ficha no Wikidata <span class="quem">IA</span></h3><p>Como um cadastro em que cada campo leva o comprovante grampeado: "fundou a empresa", com o link da matéria que diz isso.</p></div></div>
+  <div class="step"><div class="b">5</div><div><h3>Rascunho e pedido de revisão <span class="quem">IA escreve, você envia</span></h3><p>O artigo fica numa página de rascunho sua. Um editor independente lê, ajusta e decide se vai para o ar.</p></div></div>
+  <h3 style="margin:34px 0 14px">Os cuidados que evitam o artigo apagado</h3>
+  <div class="grid g3">
+    <div class="card nao"><h3>🚫 Não escreva como propaganda</h3><p>Nada de "renomado", "líder", "referência". Só fatos, cada um com fonte.</p></div>
+    <div class="card nao"><h3>🚫 Não use nome de marca na conta</h3><p>Conta com nome de empresa é recusada. Aconteceu no caso real e foi corrigido.</p></div>
+    <div class="card nao"><h3>🚫 Não peça a amigos para criar</h3><p>Várias contas ou amigos sem declarar o vínculo é detectado e pode bloquear todos.</p></div>
+    <div class="card nao"><h3>🚫 Não publique direto</h3><p>Com vínculo, o texto vai para rascunho e alguém de fora revisa.</p></div>
+    <div class="card nao"><h3>🚫 Não use fonte paga como prova</h3><p>Matéria marcada como "publicitária" só confirma fato simples, como uma data.</p></div>
+    <div class="card nao"><h3>🚫 Não brigue pelo texto depois</h3><p>Depois de publicado, o artigo não é seu. Peça mudanças na página de discussão.</p></div>
+  </div>
+  <div class="card" style="margin-top:16px"><h3>O que este guia não promete</h3><p>Não garante artigo na Wikipédia: quem decide é a comunidade de editores. Garante que você entre pelo caminho certo, com o que tem de melhor, e saiba com franqueza o que ainda falta.</p></div>
+</div></section>
+
+<section id="comecar"><div class="wrap">
+  <span class="chip">Como começar</span>
+  <h2>Você não precisa saber editar a Wikipédia</h2>
+  <p class="sub">A IA faz a pesquisa, as fichas e o texto. Você aprova, põe a senha e envia.</p>
+  <div class="step"><div class="b">1</div><div><h3>Abra o Claude Code ou o Codex</h3><p>Num computador, numa pasta qualquer. São assistentes de IA que leem páginas e escrevem arquivos.</p></div></div>
+  <div class="step"><div class="b">2</div><div><h3>Cole o pedido abaixo, com o seu nome</h3><p>Ele manda a IA ler este kit, procurar suas matérias e dizer com franqueza o que dá para fazer.</p></div></div>
+  <div class="step"><div class="b">3</div><div><h3>Diga sim só ao que fizer sentido</h3><p>Nada é publicado e nenhuma conta é criada antes do seu sim.</p></div></div>
+  <div class="cola">
+    <p class="txt" id="pedido">Leia o kit https://github.com/inematds/wikipedia-criate (README, pasta modelos/ e CASO-REAL.md). Quero colocar [SEU NOME ou SUA EMPRESA] no Wikidata e, se tiver fontes suficientes, na Wikipédia em português.
+1. Procure matérias sobre mim em jornais, revistas, faculdades, associações e arquivos da web (arquivo.pt, web.archive.org). Abra cada página e copie a frase que comprova cada fato. Monte o dossiê com o modelo 01.
+2. Diga com franqueza: dá para o Wikidata? Dá para a Wikipédia? O que falta?
+3. Monte a ficha do Wikidata (modelo 02) só com o que tem fonte.
+4. Escreva o texto da minha página de usuário (modelo 03) e um rascunho de artigo neutro (modelo 04).
+Não crie conta, não publique nada e não digite senha. Mostre tudo antes e espere o meu sim.</p>
+    <button class="btn" id="copiar" type="button">Copiar o pedido</button>
+  </div>
+  <div class="grid g2">
+    <div class="card"><h3>Quer só usar, sem instalar nada?</h3><p>Os modelos são textos simples. Abra a pasta <a href="https://github.com/inematds/wikipedia-criate/tree/main/modelos" target="_blank" rel="noopener">modelos no GitHub</a>, copie e preencha à mão. O Wikidata e a Wikipédia funcionam no navegador, sem programa.</p></div>
+    <div class="card"><h3>Onde baixar?</h3><p>Não há programa para instalar. Baixe o kit inteiro em <a href="https://github.com/inematds/wikipedia-criate/archive/refs/heads/main.zip">ZIP</a> (modelos, caso real e este guia).</p></div>
+    <div class="card"><h3>É técnico?</h3><p>Os detalhes (como a IA conduz o navegador, o que nunca fazer pela API, a lista de propriedades do Wikidata) estão no README.</p><p style="margin-top:.7em"><a class="btn ghost" href="https://github.com/inematds/wikipedia-criate#instalação-técnica" target="_blank" rel="noopener">Ver a parte técnica</a></p></div>
+    <div class="card"><h3>Quanto custa?</h3><p>Wikidata e Wikipédia são gratuitos. O custo é o do seu assistente de IA (assinatura) e o seu tempo para aprovar. Conferido em 25/11/2026.</p></div>
+  </div>
+</div></section>
+
+<section id="prova"><div class="wrap">
+  <span class="chip">A prova</span>
+  <h2>Feito numa madrugada, com o criador do INEMA</h2>
+  <p class="sub">Nei Maldaner fundou a SISNEMA em 1990 e hoje cuida do INEMA. Em 25/11/2026 este processo foi feito do zero, com ele aprovando cada passo. Tudo está no ar para você conferir.</p>
+  <div class="grid g4" style="margin-bottom:22px">
+    <div class="card"><div class="big">2</div><p>itens no Wikidata: a pessoa e a empresa</p></div>
+    <div class="card"><div class="big">19</div><p>informações, quase todas com a matéria de fonte</p></div>
+    <div class="card"><div class="big">12</div><p>referências no rascunho do artigo</p></div>
+    <div class="card"><div class="big">0</div><p>senhas ou CAPTCHAs feitos pela IA</p></div>
+  </div>
+  <div class="card">
+    <div class="linha"><b>Pessoa</b><span><a href="https://www.wikidata.org/wiki/Q142280787" target="_blank" rel="noopener">Nei Maldaner no Wikidata (Q142280787)</a></span></div>
+    <div class="linha"><b>Empresa</b><span><a href="https://www.wikidata.org/wiki/Q142280754" target="_blank" rel="noopener">SISNEMA no Wikidata (Q142280754)</a></span></div>
+    <div class="linha"><b>Vínculo</b><span><a href="https://pt.wikipedia.org/wiki/Usu%C3%A1rio:Nei_Maldaner" target="_blank" rel="noopener">Página de usuário com a declaração de conflito de interesse</a></span></div>
+    <div class="linha"><b>Rascunho</b><span><a href="https://pt.wikipedia.org/wiki/Usu%C3%A1rio:Nei_Maldaner/Rascunho" target="_blank" rel="noopener">Artigo em rascunho, aguardando revisão</a></span></div>
+    <div class="linha"><b>Erros</b><span>A primeira conta saiu com nome de marca e foi trocada; duas citações de outra pesquisa não batiam com a página e ficaram de fora. Está tudo contado no <a href="https://github.com/inematds/wikipedia-criate/blob/main/CASO-REAL.md" target="_blank" rel="noopener">caso real</a>.</span></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <span class="chip">Perguntas</span>
+  <h2>Perguntas comuns</h2>
+  <details><summary>Preciso saber programar?</summary><p>Não. A IA faz a pesquisa e escreve. Você lê, aprova, põe a senha e resolve os CAPTCHAs.</p></details>
+  <details><summary>Posso colocar minha empresa nova?</summary><p>No Wikidata, talvez, se houver fonte pública. Na Wikipédia, só quando jornais ou revistas independentes já tiverem escrito sobre ela. O guia diz isso com franqueza.</p></details>
+  <details><summary>Quanto tempo leva?</summary><p>Wikidata: algumas horas, se as matérias existem. Artigo na Wikipédia: depende da revisão dos editores, de dias a semanas.</p></details>
+  <details><summary>E se eu já tenho um artigo?</summary><p>Não edite o artigo sobre você. Proponha mudanças na página de discussão dele, com fonte, e declare o vínculo.</p></details>
+  <details><summary>Posso pagar alguém para fazer?</summary><p>Edição paga tem regras próprias na Wikimedia e precisa ser declarada. Fazer você mesmo, com vínculo declarado, é mais simples e transparente.</p></details>
+  <details><summary>Isso aparece mesmo no Google e nas IAs?</summary><p>O Wikidata e a Wikipédia são abertos e muito usados por buscadores e por quem treina IAs. Não há garantia de quando nem de como cada serviço vai usar. O ganho certo é ter uma ficha neutra e com fonte, ligada ao seu site.</p></details>
+  <p style="margin-top:26px;font-size:1.1rem">E você: <b>se alguém perguntar hoje a uma IA quem você é, o que ela responde?</b> O guia é grátis no <a href="https://inema.club" target="_blank" rel="noopener">inema.club</a>, direto na internet.</p>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <span class="pill">Wikidata</span><span class="pill">Wikipédia</span><span class="pill">Claude Code / Codex</span>
+    <p style="margin-top:18px">Wikipédia do jeito certo · guia e modelos ·
+      <a href="https://github.com/inematds/wikipedia-criate">inematds/wikipedia-criate</a> ·
+      <a href="https://inema.club">INEMA.CLUB</a></p>
+    <p style="font-size:.8rem">Projeto independente. Não tem ligação com a Wikimedia Foundation.</p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var KEY='wikipedia-criate-theme';
+    var b=document.body, t=document.getElementById('themeToggle');
+    try{ if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='☀️'; } }catch(e){}
+    t.addEventListener('click',function(){
+      var light=b.classList.toggle('light');
+      t.textContent=light?'☀️':'🌙';
+      try{ localStorage.setItem(KEY, light?'light':'dark'); }catch(e){}
+    });
+    var c=document.getElementById('copiar');
+    c.addEventListener('click',function(){
+      var txt=document.getElementById('pedido').innerText;
+      var done=function(){ var o=c.textContent; c.textContent='Copiado ✓'; setTimeout(function(){ c.textContent=o; },1800); };
+      if(navigator.clipboard){ navigator.clipboard.writeText(txt).then(done,function(){}); }
+    });
+  })();
+</script>
+</body>
+</html>

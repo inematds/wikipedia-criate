@@ -1,0 +1,14 @@
+Use na sua página de usuário (Wikidata e Wikipédia). É a PRIMEIRA edição da conta.
+Wikidata: https://www.wikidata.org/wiki/User:<Seu_Nome>?action=edit
+Wikipédia: https://pt.wikipedia.org/wiki/Usuário:<Seu_Nome>?action=edit
+Resumo da edição: declaração de conflito de interesse
+
+----- copie daqui -----
+Sou '''<Seu Nome>''', <ocupação>, fundador(a) da <EMPRESA> e <outro projeto>.
+
+== Conflito de interesse ==
+Tenho vínculo direto com qualquer artigo ou item sobre mim, sobre a <EMPRESA> e sobre o <PROJETO>. Não edito esses artigos diretamente: proponho textos em rascunho, com fontes publicadas por terceiros, e peço a revisão de editores independentes.
+----- até aqui -----
+
+Se você criou outra conta por engano antes, acrescente:
+A conta [[m:User:<OutraConta>|<OutraConta>]] foi criada por engano em <data>, não tem edições e não é usada.

@@ -1,0 +1,22 @@
+<!-- MODELO de rascunho. Publique em: Usuário:<Seu_Nome>/Rascunho
+     Regras: tom neutro (sem "renomado", "líder", "referência"), cada frase com fonte, nada sem fonte.
+     Categorias ficam DESLIGADAS (com ":" na frente) enquanto for rascunho. -->
+<!-- ao mover para o domínio principal: {{Info/Biografia/Wikidata}} -->
+'''<Nome>''' é um(a) <ocupação> <nacionalidade>, <o que fez de mais conhecido>.<ref name="perfil">{{citar web |url=<link> |título=<título> |autor=<autor> |publicado=<veículo> |data=<data> |acessodata=<data de hoje>}}</ref>
+
+== Biografia ==
+<Origem e começo da carreira, só com o que a fonte diz.><ref name="perfil" />
+
+== <Empresa ou obra principal> ==
+<Fundação, o que a empresa fazia, marcos com fonte (prêmio, contrato, número publicado).><ref>{{citar web |url=<link> |título=<título> |publicado=<veículo> |data=<data> |acessodata=<data de hoje>}}</ref>
+
+== Atividade atual ==
+<O que faz hoje, com fonte de fora.><ref>...</ref>
+
+== Reconhecimento ==
+<Prêmios e homenagens de entidades, com fonte.><ref>...</ref>
+
+== Referências ==
+{{Referências}}
+
+[[:Categoria:<Categoria>]] <!-- ativar ao mover -->

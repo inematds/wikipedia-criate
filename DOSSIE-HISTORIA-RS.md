@@ -63,6 +63,16 @@ Fonte própria da empresa: serve para fatos simples e para achar pistas de fonte
 | 19 e 25/04/2006 | A Platéia | VoIP |
 | 26/04/2006 | Rádio CDM | RoadShow da SISNEMA leva VoIP para Santa Maria |
 
+### Imprensa que diz o nome do Nei
+
+| Página | Data | O que diz (literal) |
+|---|---|---|
+| [idmat014086](https://web.archive.org/web/20060515061602/http://sisnema.com.br/Materias/idmat014086.htm) Jornal do Comércio / Informática | 23/06/2004 | "Road Show Tecnológico com a palestra 'Construindo um Ambiente Seguro em Redes Microsoft'. O evento é gratuito e será ministrado pelos diretores da SISNEMA, Nei Maldaner e Giani Maldaner." (Caxias do Sul) |
+
+A lista "Veja também" dessa página mostra o Road Show **só em 2004**: Crissiumal (ZH 12/05 e jornal Colonial 11/05), Passo Fundo/UPF, Pelotas, Santa Rosa, Cruz Alta, Caxias, Novo Hamburgo, Santa Maria, Livramento, Bagé, Três de Maio (jornal Semanal, Setrem), Carazinho, Palmeira das Missões, Porto Alegre e Gravataí. Há notas na ZH (11/06, 20/05, 14/09, 16/09, 21/09, 20/10, 11/11), no JC (10/05, 14/09, 09/11), no Baguete (10/11, 12/11), no Sinepe/RS (21 e 23/06) e no jornal Colonial (22/09/2004: "Centro de treinamento gaúcho é único a integrar Conselho da Microsoft"). Em 2005 o ciclo seguiu por Livramento, Santa Cruz, Bagé, Santo Ângelo, Pelotas (CEFET) e Caxias.
+
+**O Nei diz (27/11/2026), ainda sem fonte com o nome dele:** ele liderou pessoalmente a rede do Sicredi e criou o portal INEMA, e participou de tudo como diretor (de Tecnologia e depois de Estratégia). O "Os irmãos TI" atribui o projeto do Sicredi à empresa; falta uma fonte que ligue o Nei ao projeto.
+
 ### Nei como instrutor: Formação Gerência de TI (seção Profissões, 2005–2007)
 
 Fonte própria da empresa, mas é a parte que fala do Nei pelo nome.

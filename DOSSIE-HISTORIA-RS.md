@@ -63,6 +63,22 @@ Fonte própria da empresa: serve para fatos simples e para achar pistas de fonte
 | 19 e 25/04/2006 | A Platéia | VoIP |
 | 26/04/2006 | Rádio CDM | RoadShow da SISNEMA leva VoIP para Santa Maria |
 
+### Nei como instrutor: Formação Gerência de TI (seção Profissões, 2005–2007)
+
+Fonte própria da empresa, mas é a parte que fala do Nei pelo nome.
+
+| Página | Data | O que diz (literal) |
+|---|---|---|
+| [idmat016144](https://web.archive.org/web/2006/http://sisnema.com.br/Materias/idmat016144.htm) Módulo I - Gestão de Pessoas e Relacionamentos | 02/12/2005 | "Ministrado pelo Diretor de Tecnologia Nei Maldaner, que é certificado como System Engineer em diversas plataformas de TI e possui experiência de mais de 20 anos na área de Informática, em 40 horas"; enfoque comportamental, "situações reais do dia-a-dia das empresas". |
+| [idmat016570](https://web.archive.org/web/20060505005931/http://sisnema.com.br/Materias/idmat016570.htm) Rafaela, novos aprendizados em Gestão de Pessoas | 04/04/2006 | Aluna (Rafaela Tarouco, 23 anos) no curso SSGPTI: "Vou aplicar, tanto na minha vida pessoal como profissional", "sobre os novos conhecimentos adquiridos com Nei Maldaner". |
+| [Profissoes.htm](https://web.archive.org/web/20060212020822/http://sisnema.com.br/Profissoes.htm) | 2006–2009 | Seção "PROFISSÕES - Desenvolvendo as Pessoas", com dezenas de matérias de alunos. A Formação Gerência de TI tinha 5 módulos (Gestão de Pessoas; Estrutura e Operacional; Qualidade em Atendimento; Projetos com PMI; Gestão Avançada e Planejamento Estratégico). |
+
+**Faltam abrir** (o Internet Archive recusou a conexão por excesso de pedidos em 27/11; tentar de novo mais tarde, devagar):
+- idmat015425 "Perfil do Diretor de tecnologia Nei Maldaner" (17/01/2006): **o mais importante**.
+- idmat016301 "O Diferencial do curso - Gerência de Pessoas e Relacionamentos".
+- Imprensa do evento "Gestão Completa de TI e Pessoas" (nov/2005): idmat015977 ZH Digital, 015984/016015/016027 ZH, 016055 JC, 016001 Baguete "Curso gratuito foca gestão de TI e pessoas"; matérias do evento: 015924, 016134.
+- Alunos de Gerência de TI: 015963 Milena, 015994 Eloir, 015997 Filipe, 016004 Gustavo, 016007 Felipe, 016008 Maurocy, 016018 Oraci, 016434 Juliana, 017140 Daniel, 017142 Guto, 016320 Rafaela (SSCPCO). Depois de 2007: Otávio, Maíra, Frederico, Rodrigo.
+
 Onde buscar os originais: Baguete e BR Linux estão online (tentar pelo título); ZH, O Sul, JC, Gazeta do Sul e A Platéia de 2004–2006 só em hemeroteca ou acervo digital do jornal.
 
 ## A conferir

@@ -79,6 +79,19 @@ Fonte própria da empresa, mas é a parte que fala do Nei pelo nome.
 - Imprensa do evento "Gestão Completa de TI e Pessoas" (nov/2005): idmat015977 ZH Digital, 015984/016015/016027 ZH, 016055 JC, 016001 Baguete "Curso gratuito foca gestão de TI e pessoas"; matérias do evento: 015924, 016134.
 - Alunos de Gerência de TI: 015963 Milena, 015994 Eloir, 015997 Filipe, 016004 Gustavo, 016007 Felipe, 016008 Maurocy, 016018 Oraci, 016434 Juliana, 017140 Daniel, 017142 Guto, 016320 Rafaela (SSCPCO). Depois de 2007: Otávio, Maíra, Frederico, Rodrigo.
 
+### Portal INEMA (inema.com.br), 2000–2020
+
+O que o Nei contou em 27/11/2026, ainda sem fonte: ele criou o portal para as pessoas publicarem fotos e aventuras; foram milhões de fotos e cerca de 160 mil matérias; hoje o acervo está no inemaaventuras. Ele fotografava nos fins de semana e usava o portal como laboratório de foto digital, edição, geração de páginas, segurança de sistemas e escala com poucos recursos (proxy reverso etc.).
+
+O que o Internet Archive comprova (lido em 27/11/2026):
+- Capturas de 18/08/2000 até 2020, uma ou mais por ano.
+- [2003](https://web.archive.org/web/2003/http://www.inema.com.br/): "INEMA - Seu Site de Aventuras", com seções de aéreo, aquáticos, bikes, cavalos, corrida de aventura, montanha, motos, surf.
+- [2006](https://web.archive.org/web/2006/http://www.inema.com.br/): menu com "Upload", "Arquivos GPS", "Login" e cerca de 40 categorias; contagem por estado (RS 4475, SP 1287, SC 963…; a página não diz se são usuários ou matérias).
+- [2008](https://web.archive.org/web/2008/http://www.inema.com.br/): "Para divulgar sua aventura, viagem ou evento, basta cadastrar o texto e as fotos direto no nosso portal"; páginas pessoais, comunidades e eventos numerados (ids passam de 10.000).
+- [2010](https://web.archive.org/web/2010/http://www.inema.com.br/) e [2014](https://web.archive.org/web/2014/http://www.inema.com.br/): "Comunidades", "Mapas Online", "Enviando Fotos".
+- Fonte de imprensa que já está no rascunho: Baguete, 30/08/2006, "Maldaner fotografa Mundial de JetSki em Bali" (para o INEMA).
+- **Falta:** fonte para o tamanho do acervo (milhões de fotos, 160 mil matérias) e para o uso como laboratório. Procurar matérias sobre o INEMA na imprensa (Baguete, ZH, revistas de aventura e motociclismo) e uma página "Quem Somos" ou de números no próprio portal.
+
 Onde buscar os originais: Baguete e BR Linux estão online (tentar pelo título); ZH, O Sul, JC, Gazeta do Sul e A Platéia de 2004–2006 só em hemeroteca ou acervo digital do jornal.
 
 ## A conferir

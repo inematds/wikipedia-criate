@@ -104,6 +104,11 @@ O que o Internet Archive comprova (lido em 27/11/2026):
 
 Onde buscar os originais: Baguete e BR Linux estão online (tentar pelo título); ZH, O Sul, JC, Gazeta do Sul e A Platéia de 2004–2006 só em hemeroteca ou acervo digital do jornal.
 
+## Google Fotos do Nei (27/11/2026)
+
+- **Recorte de jornal "Eventos da Sisnema reúnem 10 mil"** (foto FB_IMG_1641125629047.jpg, 720×540, no Google Fotos do Nei). Diz que a SISNEMA "encerra o ano de 2012 com mais de 10 mil participantes em seus eventos gratuitos", que o RoadShow foi a Panambi, Carazinho, Santa Maria e Santana do Livramento, e cita Jones Maldaner como presidente. **Falta: nome do jornal, data e página** (a foto não mostra o cabeçalho). Achando, é fonte independente para a Wikipédia. Cópia: `~/projetos/output/carrossel-inema/2026-11-27-nossa-historia/fotos/recorte-jornal-2012.png`.
+- **Palestra da SISNEMA para estudantes, 18/03/2011** (IMG_9619 e IMG_9620, Canon EOS 50D): auditório lotado, slide "A SISNEMA" no telão. Local não marcado na foto. Usadas no carrossel do inema.tds.
+
 ## A conferir
 
 - Página de tag do Baguete (https://www.baguete.com.br/category/tags/Sisnema): a busca citou roadshows em Panambi e Três de Maio (palestras de Giani Maldaner), em Vacaria, Passo Fundo e Cachoeira do Sul (cloud, IPv6) e uma Jornada Tecnológica no IFSul de Pelotas. As datas ainda não foram confirmadas porque a página não abriu pelo script.

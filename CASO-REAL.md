@@ -30,6 +30,8 @@ Tudo abaixo foi feito em uma madrugada, numa sessão do Claude Code com o Nei ao
 | 05:40 | Site | O site inema.club passou a apontar para o item do Wikidata (`sameAs`). |
 | 05:50 | Rascunho | Artigo em `Usuário:Nei Maldaner/Rascunho`, revisado antes de salvar: frases sem fonte cortadas (local de nascimento, ano da homenagem). |
 | 06:00 | Pedido | Pedido de revisão publicado em "Tire suas dúvidas". Agora quem decide é a comunidade. |
+| 25/11 13:07 | Alerta | Um editor marcou a página de usuário para eliminação rápida (U1); outro desfez dois minutos depois. |
+| 27/11 | Rascunho v2 | Texto reescrito como história (redes nos anos 90, palestras Academics em escolas desde 1998, Road Show no interior em 2004–2006), com notas do JC, O Sul e Gazeta do Sul e páginas antigas da SISNEMA guardadas no Internet Archive. Publicado no rascunho pelo navegador na tela do Nei; o CAPTCHA ficou com ele. |
 
 ## O que deu certo
 
